@@ -16,10 +16,11 @@ vim.o.backup = false
 vim.o.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.o.undofile = true
 
-vim.o.colorcolumn = "160"
+vim.o.colorcolumn = "120"
 
 -- Set highlight on search
 vim.o.hlsearch = false
+vim.o.incsearch = true
 
 -- Make line numbers default
 vim.wo.relativenumber = true
@@ -55,4 +56,8 @@ vim.o.completeopt = 'menuone,noselect'
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
+
+-- Keeps cursor comfotably in view
+vim.o.scrolloff = 8
+vim.o.signcolumn = "yes"
 
